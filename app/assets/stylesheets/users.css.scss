@@ -1,0 +1,80 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.main{
+  position:static;
+  display:block;
+}
+.field {
+  float: left; 
+  padding: 10px, 10px;
+  width: 700px;
+  height:600px;
+  position:static;
+    
+/*
+   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+   background: -moz-linear-gradient(top,  #fff,  #ddd);
+ */ 
+   }
+
+
+th{
+  font-weight :bold;
+  text-align  :left;
+}
+
+.red{
+  color:red;
+}
+.right_lay{
+  float: right;
+  text-align: left;
+  width:700px;
+  height:600px;
+  position:static;
+
+}
+.outline_red>table{
+  top:50px;
+  border-radius: 5px 5px 5px 5px;  
+  border-style:inset;
+  width:500px;
+  border-color: #777;
+ }
+.actions{
+  position: absolute;
+  top:620px;
+}
+.bottom_link{
+  position: absolute;
+  top:650px;
+}
+input,select {
+       
+    /*　フォントの影　*/
+    text-shadow: 0 1px #fff;
+    -moz-box-shadow: 0 1px 1px #fff;
+    -webkit-box-shadow: 0 1px 1px #fff;
+    box-shadow: 0 1px 1px #fff;
+
+
+    /* 角丸 */ 
+    border-radius: 5px 5px 5px 5px;
+    
+    /* */
+}
+
+input[type="submit"] {
+    /*　フォントの影　*/
+    color : #333;
+    text-shadow: 0 1px #fff;
+    -moz-box-shadow: 0 1px 1px #fff;
+    -webkit-box-shadow: 0 1px 1px #fff;
+    box-shadow: 0 1px 1px #fff;
+    /* 背景のグラデーション */
+     background: -webkit-gradient(linear, left top, left bottom, from(#ecc), to(#a88)); 
+     background: -moz-linear-gradient(top,  #9ff,  #7dd); 
+   box-shadow: 0 1px 1px #fff;
+
+}

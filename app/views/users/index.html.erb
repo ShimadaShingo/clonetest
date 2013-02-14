@@ -1,0 +1,54 @@
+<h1>人員マスタ一覧</h1>
+
+<table>
+  <tr>
+    <th>人員名称（姓）</th>
+    <th>人員名称（名）</th>
+    <th>人員名称カナ（姓）</th>
+    <th>人員名称カナ（名）</th>
+    <th>連絡先1</th>
+    <th>連絡先2</th>
+    <th>連絡先3</th>
+    <th>メールアドレス1</th>
+    <th>メールアドレス2</th>
+    <th>メールアドレス3</th>
+    <th>権限レベル</th>
+    <th>パスワード</th>
+    <th>打刻忘れ通知</th>
+    <th>災害エリアメール送信</th>
+    <th>作成者</th>
+    <th>更新者</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.family_name %></td>
+    <td><%= user.first_name %></td>
+    <td><%= user.family_kana %></td>
+    <td><%= user.first_kana %></td>
+    <td><%= user.contact1 %></td>
+    <td><%= user.contact2 %></td>
+    <td><%= user.contact3 %></td>
+    <td><%= user.mail1 %></td>
+    <td><%= user.mail2 %></td>
+    <td><%= user.mail3 %></td>
+    <td><%= user.authlevel %></td>
+    <td><%= user.pw %></td>
+    <td><%= user.notice %></td>
+    <td><%= user.sendmail %></td>
+    <td><%= user.create_user %></td>
+    <td><%= user.update_user %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div class="bottom_link">
+<%= link_to 'New User', new_user_path %>
+</div>>

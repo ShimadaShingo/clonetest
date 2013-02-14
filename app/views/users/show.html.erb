@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>人員名称(姓):</b>
+  <%= @user.family_name %>
+</p>
+
+<p>
+  <b>人員名称(名):</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>人員名称カナ(姓):</b>
+  <%= @user.family_kana %>
+</p>
+
+<p>
+  <b>人員名称カナ(名):</b>
+  <%= @user.first_kana %>
+</p>
+
+<p>
+  <b>連絡先1:</b>
+  <%= @user.contact1 %>
+</p>
+
+<p>
+  <b>連絡先２:</b>
+  <%= @user.contact2 %>
+</p>
+
+<p>
+  <b>連絡先３:</b>
+  <%= @user.contact3 %>
+</p>
+
+<p>
+  <b>メールアドレス1:</b>
+  <%= @user.mail1 %>
+</p>
+
+<p>
+  <b>メールアドレス２:</b>
+  <%= @user.mail2 %>
+</p>
+
+<p>
+  <b>メールアドレス３:</b>
+  <%= @user.mail3 %>
+</p>
+
+<p>
+  <b>権限レベル:</b>
+  <%= @user.authlevel %>
+</p>
+
+<p>
+  <b>パスワード:</b>
+  <%= @user.pw %>
+</p>
+
+<p>
+  <b>打刻忘れ通知:</b>
+  <%= @user.notice %>
+</p>
+
+<p>
+  <b>災害エリアメール送信:</b>
+  <%= @user.sendmail %>
+</p>
+
+<p>
+  <b>登録者:</b>
+  <%= @user.create_user %>
+</p>
+
+<p>
+  <b>更新者:</b>
+  <%= @user.update_user %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

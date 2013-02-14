@@ -1,0 +1,25 @@
+ja:
+  activerecord:
+    models:
+      user: 人員  #g
+
+    attributes:
+      user:
+        authlevel: 権限レベル  #g
+        contact1: 連絡先１  #g
+        contact2: 連絡先２  #g
+        contact3: 連絡先３  #g
+        create_user: 作成者  #g
+        family_kana: 人員名称カナ（姓）  #g
+        family_name: 人員名称（姓）  #g
+        first_kana: 人員名称カナ（名）  #g
+        first_name: 人員名称（名）  #g
+        lock_version: lock_version  #g
+        mail1: メールアドレス１  #g
+        mail2: メールアドレス２  #g
+        mail3: メールアドレス３  #g
+        notice: 打刻忘れ通知  #g
+        pw: パスワード  #g
+        pw_confirmation: パスワード（確認用）  #g
+        sendmail: 災害エリアメール送信  #g
+        update_user: 更新者  #g

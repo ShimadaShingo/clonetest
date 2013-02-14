@@ -1,0 +1,123 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "") %> 個の入力間違いがあります。</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+ <div class="main">
+
+<div class="field">
+	 <table>
+	<!-- 
+		<tr>
+			<th><%= f.label :family_name %>			</th>
+			<td><%= f.text_field :family_name %>	</td>
+	    </tr>
+			<tr>
+	 		<th><%= f.label :first_name %> 			</th>
+			<td><%= f.text_field :first_name %>		</td>
+	    </tr
+		<tr>
+			<th><%= f.label :family_kana %>    		</th>
+			<td><%= f.text_field :family_kana %>	</td>
+	    </tr>
+	 	<tr>
+			<th> <%= f.label :first_kana %>		    </th>
+		    <td> <%= f.text_field :first_kana %>	</td>
+	-->
+		<tr>
+			<th></th>
+			<th>姓</th>
+			<th>名</th>
+	    </tr>
+		<tr>
+			<th>人員名称		</th>
+			<td><%= f.text_field :family_name %>	</td>
+			<td><%= f.text_field :first_name %>		</td>
+	    </tr>
+		<tr>
+			<th>人員名称（カナ）   		</th>
+			<td><%= f.text_field :family_kana %>	</td>
+		    <td> <%= f.text_field :first_kana %>	</td>
+	    </tr>
+
+	 	<tr>
+			<th><%= f.label :contact1 %>			</th>
+			<td><%= f.text_field :contact1 %>	    </td>
+		</tr>
+	
+		<tr>
+			<th><%= f.label :contact2 %>		</th>
+			<td><%= f.text_field :contact2 %>	</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :contact3 %>		</th>
+			<td><%= f.text_field :contact3 %>	</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :mail1 %>		</th>
+			<td><%= f.text_field :mail1 %>	</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :mail2 %>		</th>
+			<td><%= f.text_field :mail2 %>	</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :mail3 %>		</th>
+			<td><%= f.text_field :mail3 %>	</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :pw %>		</th>
+			<td><%= f.password_field :pw ,:value => @user.pw  %>		</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :pw_confirmation %>		</th>
+			<td><%= password_field "user","pw_confirmation" %>		</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :create_user %>		</th>
+			<td><%= f.text_field :create_user %></td>
+	    </tr>
+		<tr>
+			<th><%= f.label :update_user %>		</th>
+			<td><%= f.text_field :update_user %></td>
+	    </tr>
+	</table>
+</div>
+<div class="right_lay">
+	<div class="outline_red">
+	<table>
+		<tr>
+			<th><%= f.label :authlevel %>		</th>
+			<td><%= f.select "authlevel" ,[["一般ユーザー",0],["管理者",1]] %></td>
+	    </tr>
+		<tr>
+			<th><%= f.label :notice 	%>		</th>
+			<td><%= f.check_box(:notice) %> 通知する		</td>
+	    </tr>
+		<tr>
+			<th><%= f.label :sendmail 	%>		</th>
+			<td><%= f.check_box(:sendmail) %> 送信する		</td>
+	    </tr>
+		<tr>
+			<th>	</th>
+			<td><p class="red"> 　*メールアドレス1が適用されます</p></td>
+	    </tr>
+	</table>
+	</div>
+
+</div>
+<%= f.hidden_field :lock_version %>
+</div>
+<div class="actions">
+	<%= f.submit %>
+</div>
+<% end %>

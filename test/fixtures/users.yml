@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  family_name: MyString
+  first_name: MyString
+  family_kana: MyString
+  first_kana: MyString
+  contact1: MyString
+  contact2: MyString
+  contact3: MyString
+  mail1: MyString
+  mail2: MyString
+  mail3: MyString
+  authlevel: 1
+  pw: MyString
+  notice: MyString
+  sendmail: MyString
+  create_user: MyString
+  update_user: MyString
+
+two:
+  family_name: MyString
+  first_name: MyString
+  family_kana: MyString
+  first_kana: MyString
+  contact1: MyString
+  contact2: MyString
+  contact3: MyString
+  mail1: MyString
+  mail2: MyString
+  mail3: MyString
+  authlevel: 1
+  pw: MyString
+  notice: MyString
+  sendmail: MyString
+  create_user: MyString
+  update_user: MyString
