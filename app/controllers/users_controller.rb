@@ -2,6 +2,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
+  # ono-ono
   
   def index
     @users = User.all
